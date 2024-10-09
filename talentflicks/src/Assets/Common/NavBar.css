@@ -1,0 +1,143 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navBar {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #090908;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.nav > li {
+  list-style: none;
+}
+
+.lists {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 950px;
+}
+
+.lists:hover,
+.profile > .profile-menu:hover {
+  color: #ffd200 !important;
+  scale: 1.05;
+}
+
+.active {
+  color: #ffd200;
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+.profile {
+  font-size: 18px !important;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 600;
+  padding-right: 40px;
+  display: flex;
+  width: 320px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileList {
+  position: absolute;
+  top: 60px;
+  padding: 0 10px;
+  display: none;
+  background-color: #debc27;
+  border-radius: 12px;
+  transition:  0.3s ease;
+}
+
+.profileList.show {
+  display: block;
+}
+
+
+.menu-arrow-down {
+  transition: all .3s linear !important;
+}
+
+.open {
+  transform: rotate(180deg)  ;
+}
+
+.profileList li {
+  list-style: none;
+ margin: 10px 0 ;
+  padding: 10px;
+  color: #000;
+}
+
+.profileList li:hover{
+  background-color: #2b2b2bc3;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.profile-menu {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.profileIcon {
+  margin-right: 2px;
+}
+
+/* Get App CSS */
+
+.getApp {
+  color: #000000 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  border: none;
+  background-color: #ffd200 !important;
+  padding: 10px 20px !important;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  transition: 0.7s;
+}
+
+.getApp:hover {
+  color: #fff !important;
+  background-color: transparent !important;
+  border: #ffd200 2px solid !important;
+  scale: 1.02 !important;
+  color: #fff;
+}
