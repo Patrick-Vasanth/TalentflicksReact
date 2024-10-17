@@ -45,9 +45,10 @@ export default function GetAppBtn() {
           onClick={handleClose}
           sx={(theme) => ({
             position: 'absolute',
-            right: 8,
-            top: 8,
-            color: theme.palette.grey[500],
+            right: 10,
+            top: 15,
+            color: "#000",
+            border:"2px solid #000"
           })}
         >
           <CloseIcon />

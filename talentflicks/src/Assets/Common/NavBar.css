@@ -47,8 +47,7 @@
   width: 950px;
 }
 
-.lists:hover,
-.profile > .profile-menu:hover {
+.lists:hover {
   color: #ffd200 !important;
   scale: 1.05;
 }
@@ -113,6 +112,11 @@
   font-weight: 600 !important;
   color: #fff !important;
   border: none !important;
+  transition: 0.5s linear;
+}
+
+.profile-menu:hover{
+  border: 2px solid #ffd200 !important;
 }
 
 .profileIcon {
