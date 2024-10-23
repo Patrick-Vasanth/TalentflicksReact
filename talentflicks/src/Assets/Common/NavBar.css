@@ -111,12 +111,12 @@
   font-size: 18px !important;
   font-weight: 600 !important;
   color: #fff !important;
-  border: none !important;
+  border: 2px solid #ffd200 !important;
   transition: 0.5s linear;
 }
 
 .profile-menu:hover{
-  border: 2px solid #ffd200 !important;
+ 
 }
 
 .profileIcon {

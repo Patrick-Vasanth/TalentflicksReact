@@ -76,9 +76,8 @@
   height: 450px;
   margin: auto;
   overflow: hidden;
-  box-shadow:  -5px 5px 30px 5px #ffd200;
+  box-shadow: -5px 5px 30px 5px #ffd200;
   border-radius: 12px;
-
 }
 
 .slider-image {
@@ -138,7 +137,7 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.mainApp{
+.mainApp {
   display: flex;
   align-items: center;
   width: 500px;
@@ -151,16 +150,53 @@
 /* Start of the youtube section */
 
 .youtube {
-  height: 700px;
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../Images/Film-and-Theater-Presentation-_1920-x-1080-px_.webp")
+    no-repeat center center fixed;
+  background-size: cover;
 }
 
-.section {
-  height: 300px;
-  width: 300px;
-  background-color: red;
+.sticky-content {
+  position: sticky;
+  top: 0; /* Adjust as needed */
+  max-height: 95vh;
+  width: 80%; /* Adjust this to control the visible height of the scrollable area */
+  overflow: auto; /* Enable scrolling within the content */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: Add a background to the sticky content for better readability */
+  padding: 20px;
+  border-radius: 8px; /* Optional: Rounded corners for the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visual */
+  transition: 0.5s linear;
+}
+
+.scrollable-section {
+  max-height: 90 vh; /* Control the height of the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling for the content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.child1,
+.child2,
+.child3,
+.child4,
+.child5,
+.child6 {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
 }
 
 /* End of the youtube section */

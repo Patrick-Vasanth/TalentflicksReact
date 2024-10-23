@@ -3,8 +3,18 @@ import NavBar from "../Common/NavBar";
 import MainSlider from "./MainSlider";
 import GetAppBtn from "../Common/GetAppBtn";
 import Youtube from "./Youtube";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 export default function HomePage() {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000, // You can specify the animation duration here (in ms)
+      easing: 'linear', // Easing function for the animations
+      once: false,// Whether animation should happen only once - while scrolling down
+    });
+  },[])
   return (
     <div>
       <div className="navSection">
