@@ -14,12 +14,11 @@ export default function NavBar() {
 
   let showProfile = () => {
     setIsProfileOpen((prev) => !prev);
-    
   };
   return (
     <div className="navBar">
       <div className="logo">
-        <Link to="/home">
+        <Link to="/">
           <img src={Logo} alt="Talentflicks Logo" />
         </Link>
       </div>
@@ -49,10 +48,12 @@ export default function NavBar() {
               id="arrow"
             />
           </button>
-          <ul className={`profileList ${isProfileOpen ? 'show' : ''}`}>
-            <li>
-              <PortraitIcon /> My Account
-            </li>
+          <ul className={`profileList ${isProfileOpen ? "show" : ""}`}>
+            <Link className="account" to="/account">
+              <li>
+                <PortraitIcon /> SignIn/SignUp
+              </li>
+            </Link>
             <li>
               <LogoutIcon /> Logout
             </li>

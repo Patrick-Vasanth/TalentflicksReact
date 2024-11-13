@@ -173,15 +173,29 @@ html {
   height: 500px;
   display: flex;
   align-items: center;
+  gap: 40px;
+}
+
+.comp-content,.winner-content,.quiz-content{
+  color: #fff;
+  font-size: 24px;
+  width: 700px;
+}
+
+.comp-content>h1,.winner-content>h1,.quiz-content>h1{
+  text-align: center;
+  text-decoration-line: underline;
+  color: #ffd200;
 }
 
 .winner{
   justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 
 .inner1,.inner2,.inner3{
-  width: 400px;
+  min-width: 400px;
   height: 400px;
   border: 3px solid #ffd200;
   border-radius: 12px;

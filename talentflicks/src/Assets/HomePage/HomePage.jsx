@@ -6,6 +6,8 @@ import Youtube from "./Youtube";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
+import Whatsapp from "../Common/Whatsapp";
+import ScrollTop from "../Common/ScrcollTop";
 
 export default function HomePage() {
   useEffect(()=>{
@@ -41,6 +43,10 @@ export default function HomePage() {
         <Youtube />
       </div>
       <div className="ourApp"></div>
+      <div className="BottomIcons">
+        <Whatsapp />
+        <ScrollTop />
+      </div>
     </div>
   );
 }

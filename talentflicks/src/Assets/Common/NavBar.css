@@ -82,30 +82,29 @@ html {
   display: none;
   background-color: #debc27;
   border-radius: 12px;
-  transition:  0.3s ease;
+  transition: 0.3s ease;
 }
 
 .profileList.show {
   display: block;
 }
 
-
 .menu-arrow-down {
-  transition: all .3s linear !important;
+  transition: all 0.3s linear !important;
 }
 
 .open {
-  transform: rotate(180deg)  ;
+  transform: rotate(180deg);
 }
 
 .profileList li {
   list-style: none;
- margin: 10px 0 ;
+  margin: 10px 0;
   padding: 10px;
   color: #000;
 }
 
-.profileList li:hover{
+.profileList li:hover {
   background-color: #2b2b2bc3;
   color: #fff;
   border-radius: 8px;
@@ -119,12 +118,15 @@ html {
   transition: 0.5s linear;
 }
 
-.profile-menu:hover{
- 
+.profile-menu:hover {
 }
 
 .profileIcon {
   margin-right: 2px;
+}
+
+.account {
+  text-decoration: none;
 }
 
 /* Get App CSS */
@@ -149,3 +151,77 @@ html {
   scale: 1.02 !important;
   color: #fff;
 }
+
+/*Acount css  */
+
+.accountForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color:whitesmoke ;
+}
+
+.commonImage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validate {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commonImg {
+  width: 400px;
+  height: 400px;
+}
+
+
+
+/* End of Account Css */
+
+/* Login Css */
+
+.loginForm {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #ffd200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12%;
+  color: #ffd200;
+}
+
+
+#loginBtn{
+  color: #000 !important;
+  outline: 2px solid #ffd200;
+  border: none;
+}
+
+#loginBtn:hover{
+  background: #ffd200;
+  color: #fff !important;
+}
+
+#user-label,#password-label{
+  color: #000 !important;
+}
+
+.loginForm>h3{
+  font-weight: 700 !important;
+}
+
+/* End of login Css */
+
+/* SignUp css */
+
+/* End of Signup css */
