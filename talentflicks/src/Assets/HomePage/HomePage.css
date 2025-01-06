@@ -6,6 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 /* Nav-section */
 .navSection {
   height: 75px !important;
@@ -18,7 +20,8 @@ html {
   width: 100%;
   min-height: 90.8vh;
   justify-content: center;
-  background: url("../Images/HomeBanner.jpg");
+  /* background: url("../Images/HomeBanner.jpg"); */
+  background: #fff;
   background-size: cover;
   background-attachment: fixed;
   align-items: center;
@@ -31,10 +34,11 @@ html {
   min-height: 90vh;
   align-items: center;
   gap: 40px;
+  border-bottom: 4px solid #ffd200;
 }
 
 .sliderContent {
-  color: #fff;
+  color: #000;
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -80,7 +84,7 @@ html {
   height: 450px;
   margin: auto;
   overflow: hidden;
-  box-shadow: -5px 5px 30px 5px #ffd200;
+  box-shadow: -5px 5px 25px  #ffd200;
   border-radius: 12px;
 }
 
@@ -158,11 +162,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../Images/6235663.jpg") no-repeat center center fixed;
+  /* background: url("../Images/6235663.jpg") no-repeat center center fixed; */
   background-size: cover;
+  border-bottom: 4px solid #ffd200;
 }
 
-.sticky-content{
+.sticky-content {
   width: 80%;
 }
 
@@ -176,25 +181,32 @@ html {
   gap: 40px;
 }
 
-.comp-content,.winner-content,.quiz-content{
-  color: #fff;
+.comp-content,
+.winner-content,
+.quiz-content {
+  color: #000;
   font-size: 24px;
   width: 700px;
 }
 
-.comp-content>h1,.winner-content>h1,.quiz-content>h1{
+.comp-content > h1,
+.winner-content > h1,
+.quiz-content > h1 {
   text-align: center;
   text-decoration-line: underline;
   color: #ffd200;
+  font-weight: bolder;
+  text-shadow: 3px 3px 5px #2b2b2b;
 }
 
-.winner{
+.winner {
   justify-content: flex-end;
   flex-direction: row-reverse;
 }
 
-
-.inner1,.inner2,.inner3{
+.inner1,
+.inner2,
+.inner3 {
   min-width: 400px;
   height: 400px;
   border: 3px solid #ffd200;
@@ -207,7 +219,7 @@ html {
   font-weight: bolder;
   font-size: 40px;
   color: #ffd200;
-  text-shadow: 6px 6px 3px rgba(216, 210, 210, 0.5);
+  text-shadow: 3px 3px 5px #2b2b2b;
   text-transform: uppercase;
   text-decoration-line: underline;
 }
@@ -222,6 +234,101 @@ html {
 
 .ourApp {
   height: 100vh;
+  padding-top: 5%;
+}
+
+.apps {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 4px solid #ffd200;
+}
+
+.appContent {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top: 2px solid #2b2b2b;
+  border-left: 16px solid #ffd200;
+  border-right: 16px solid #ffd200;
+  border-bottom: 2px solid #2b2b2b;
+  color: #000;
+}
+
+.appContent > p {
+  font-size: 20px;
+}
+
+.appContent > h1 {
+  color: #ffd200;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px #2b2b2b;
+}
+
+.appImage {
+  display: flex;
+  align-items: center;
+  height: 90vh;
 }
 
 /* App ending css */
+
+
+/* How works start */
+
+.howWorks{
+  height: 100vh;
+  padding-top: 6.5%;
+}
+
+.innerImg{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.wIcon{
+  color: #ffd200;
+  font-size: 50px !important;
+}
+
+.how-works>h1{
+  text-align: center;
+  font-weight: bolder;
+  color: #ffd200;
+  text-shadow: 3px 3px 5px #2b2b2b;
+  text-decoration: underline;
+}
+
+.work-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 10px 2px 3px #ffd200;
+}
+
+.work{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.work-img,.work-content{
+  height: 100%;
+  width: 50%;
+}
+
+
+/* How works end         */

@@ -8,6 +8,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Whatsapp from "../Common/Whatsapp";
 import ScrollTop from "../Common/ScrcollTop";
+import OurApp from "./OurApp";
+import HowWorks from "./HowWorks";
 
 export default function HomePage() {
   useEffect(()=>{
@@ -42,7 +44,12 @@ export default function HomePage() {
       <div className="youtubeContent">
         <Youtube />
       </div>
-      <div className="ourApp"></div>
+      <div className="ourApp">
+        <OurApp />
+      </div>
+      <div className="howWorks">
+        <HowWorks />
+      </div>
       <div className="BottomIcons">
         <Whatsapp />
         <ScrollTop />

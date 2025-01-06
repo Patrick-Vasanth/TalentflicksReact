@@ -13,7 +13,7 @@ export default function ScrollTop() {
   };
 
   return (
-    <div style={{position:"fixed",bottom:20,right:90}}>
+    <div style={{position:"fixed",bottom:12,right:85}}>
       <Box sx={{ "& > :not(style)": { m: 1 } }} onClick={handleScrollToTop}>
         <Fab style={{border:"3px solid #ffd200",background:"transparent"}} aria-label="add">
           <KeyboardCapslockIcon sx={{color:"#ffd200",fontSize:30}} />

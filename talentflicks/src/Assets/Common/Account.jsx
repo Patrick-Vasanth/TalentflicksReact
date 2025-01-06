@@ -14,12 +14,13 @@ export default function Account() {
     <div className='accountForm'>
         <div className="commonImage">
             <img src={Logo} alt="Logo" className='commonImg'/>
+            <h2>"Where your Dream grows along with You"</h2>
         </div>
         <div className="validate">
             {isLogin ? (
                 <Login toggleForm={toggleForm}/>
             ):(
-                <SignUp />
+                <SignUp toggleForm={toggleForm} />
             )}
         </div>
     </div>

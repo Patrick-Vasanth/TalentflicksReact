@@ -59,7 +59,7 @@ export default function GetAppBtn() {
             <h3>Comming soon....</h3>
           </div>
           <div className="appImage">
-            <img src={AppImage} alt="appImage" width={210} height={350} />
+            <img src={AppImage} alt="appImage" width={205} height={350} />
           </div>
          </div>
         </DialogContent>

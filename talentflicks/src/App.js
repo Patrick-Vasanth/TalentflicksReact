@@ -9,6 +9,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Assets/Common/Login";
 import Account from "./Assets/Common/Account";
+import SignUp from "./Assets/Common/SignUp";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />}/>
           <Route path="/account" element={<Account />}/>
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Router>
     </div>
